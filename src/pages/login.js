@@ -9,7 +9,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import Layout from "../layouts/centered";
 import CenteredForm from "../layouts/centered-form";
 
-import rainbowLogo from "../../public/images/rainbow-logo.png"
+import Logo from "../../public/icons/favicon.ico";
 
 const Index = () => {
   const { register, handleSubmit } = useForm();
@@ -29,7 +29,7 @@ const Index = () => {
           <div>
             <Image
               className="mx-auto h-12 w-auto"
-              src={rainbowLogo}
+              src={Logo}
               alt="Workflow"
             />
             <h2 className="mt-6 text-center text-3xl font-extrabold text-green-900">
