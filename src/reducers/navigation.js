@@ -34,8 +34,8 @@ const initialState = [
         title: "Reports",
         items: [
           {
-            url: "/reports",
-            title: "Daily Report",
+            url: "/",
+            title: "Year Report",
             items: [],
           },
         ],
@@ -50,18 +50,53 @@ const initialState = [
         },
         items: [
           {
-            url: "/users",
-            title: "Users",
+            url: "/academiclevels",
+            title: "Academic Level",
             items: [],
           },
           {
-            url: "/groups",
-            title: "Groups",
+            url: "/academicyears",
+            title: "Academic Year",
             items: [],
           },
           {
-            url: "/workschedule",
-            title: "Workschedules",
+            url: "/categories",
+            title: "Categories",
+            items: [],
+          },
+          {
+            url: "/classes",
+            title: "Classes",
+            items: [],
+          },
+          {
+            url: "/grades",
+            title: "Grades",
+            items: [],
+          },
+          {
+            url: "/schools",
+            title: "School",
+            items: [],
+          },
+          {
+            url: "/students",
+            title: "Students",
+            items: [],
+          },
+          {
+            url: "/teachers",
+            title: "Teacher's",
+            items: [],
+          },
+          {
+            url: "/subjects",
+            title: "Subject's",
+            items: [],
+          },
+          {
+            url: "/timetable",
+            title: "Time Table's",
             items: [],
           },
         ],

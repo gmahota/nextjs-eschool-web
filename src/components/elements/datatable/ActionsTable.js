@@ -72,22 +72,23 @@ const Datatable = ({
           Cell: ({ row }) => (
             <>
               {canView === true ? (
-                <button key={row.values.id} onClick={() => router.push(`${link}/${row.values.id}`)}>
+                <button key={row.values.id} 
+                onClick={() => router.push(`${link}/${row.values.id || row.values.code}`)}>
                   <FiEye className="stroke-current mr-2" />
                 </button>
               ) : (
                 <></>
               )}
               {showUsers === true ? (
-                <button key={row.values.id} onClick={() => handlerShowUsers(row.values.id) }>
+                <button key={row.values.id|| row.values.code} onClick={() => handlerShowUsers(row.values.id|| row.values.code) }>
                   <HiUserGroup className="stroke-current mr-2" />
                 </button>
               ) : (
                 <></>
               )}
               {canEdit === true ? (
-                <button key={row.values.id}
-                  onClick={() => handlerEdit(row.values.id) }
+                <button key={row.values.id || row.values.code}
+                  onClick={() => handlerEdit(row.values.id|| row.values.code) }
                 >
                   <FiEdit className="stroke-current mr-2" />
                 </button>
@@ -95,7 +96,7 @@ const Datatable = ({
                 <></>
               )}
               {canDuplicate === true ? (
-                <button key={row.values.id} onClick={() => handlerDuplicate(row.values.id)}>
+                <button key={row.values.id|| row.values.code} onClick={() => handlerDuplicate(row.values.id|| row.values.code)}>
                   <BiGitRepoForked className="stroke-current mr-2" />
                 </button>
               ) : (

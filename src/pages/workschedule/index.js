@@ -45,7 +45,6 @@ export default function Workschedules({ allWorkschedules }) {
 
   function handlerEdit(id){
     router.push(`workschedule/${id}/edit`)
-
   }
   async function  handleSave(){
 
